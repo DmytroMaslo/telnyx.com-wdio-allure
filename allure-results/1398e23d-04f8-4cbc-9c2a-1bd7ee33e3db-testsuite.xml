@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1667498264274' stop='1667498266788'>
+    <name>Telnyx product journey</name>
+    <title>Telnyx product journey</title>
+    <test-cases>
+        <test-case start='1667498264275' status='broken' stop='1667498266787'>
+            <name>"before each" hook for Telnyx product journey</name>
+            <title>"before each" hook for Telnyx product journey</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.87'/>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.87'/>
+            </parameters>
+            <steps>
+                <step start='1667498264278' status='broken' stop='1667498266787'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='86fe9c46-dc44-4f08-9b7e-dfbf8d75a603-attachment.json' type='application/json' size='34'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>unknown error: net::ERR_INTERNET_DISCONNECTED
+                  (Session info: chrome=107.0.5304.87)</message>
+                <stack-trace>unknown error: unknown error: net::ERR_INTERNET_DISCONNECTED
+                  (Session info: chrome=107.0.5304.87)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Context.&lt;anonymous> (/home/cryzalis/study_portfolio/wdio-docker/test/specs/products.e2e.js:12:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

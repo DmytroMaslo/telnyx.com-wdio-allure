@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1667460454117' stop='1667460457079'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1667460454117' status='broken' stop='1667460457077'>
+            <name>check Voice API product</name>
+            <title>check Voice API product</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-106.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1667460454120' status='broken' stop='1667460457077'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='45efcbe8-f2fa-4035-9790-6bf7b831d585-attachment.json' type='application/json' size='34'/>
+                    </attachments>
+                    <steps>
+                        <step start='1667460456784' status='passed' stop='1667460457075'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='bd3dab57-5fee-4d08-8568-29c930ac9ebf-attachment.png' type='image/png' size='56567'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Reached error page: about:neterror?e=nssFailure2&amp;u=https%3A//telynx.com/&amp;c=UTF-8&amp;d=The%20connection%20to%20telynx.com%20was%20interrupted%20while%20the%20page%20was%20loading.</message>
+                <stack-trace>unknown error: Reached error page: about:neterror?e=nssFailure2&amp;u=https%3A//telynx.com/&amp;c=UTF-8&amp;d=The%20connection%20to%20telynx.com%20was%20interrupted%20while%20the%20page%20was%20loading.
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Context.&lt;anonymous> (/home/cryzalis/study_portfolio/wdio-docker/test/specs/products.e2e.js:6:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,99 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1667483764566' stop='1667483769063'>
+    <name>Telnyx product journey</name>
+    <title>Telnyx product journey</title>
+    <test-cases>
+        <test-case start='1667483764567' status='broken' stop='1667483769061'>
+            <name>check Wireless product(alerting)</name>
+            <title>check Wireless product(alerting)</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.87'/>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.87'/>
+            </parameters>
+            <steps>
+                <step start='1667483764569' status='passed' stop='1667483767517'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='8910fc06-d283-48b2-a178-13f8325c9712-attachment.json' type='application/json' size='34'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1667483767521' status='passed' stop='1667483768205'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='56cd96f4-c04f-4d54-8142-684dfb854f9d-attachment.json' type='application/json' size='79'/>
+                    </attachments>
+                    <steps>
+                        <step start='1667483767535' status='passed' stop='1667483767642'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='fe79eadb-f192-4412-bd73-15c737b0fa2f-attachment.json' type='application/json' size='79'/>
+                                <attachment title='Response' source='0aad4074-c40d-47bb-82bd-b32bb36d0e9e-attachment.json' type='application/json' size='83'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1667483767657' status='passed' stop='1667483767700'>
+                            <name>POST /session/:sessionId/elements</name>
+                            <title>POST /session/:sessionId/elements</title>
+                            <attachments>
+                                <attachment title='Request' source='6237d695-7438-41d2-8010-bdc014e1f3ce-attachment.json' type='application/json' size='79'/>
+                                <attachment title='Response' source='b761c33d-233b-43cc-a09e-006c22afb64c-attachment.json' type='application/json' size='83'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1667483767705' status='passed' stop='1667483767765'>
+                            <name>POST /session/:sessionId/element/d21f0ecc-5ecd-41b9-b02d-14044f214bf1/click</name>
+                            <title>POST /session/:sessionId/element/d21f0ecc-5ecd-41b9-b02d-14044f214bf1/click</title>
+                            <attachments>
+                                <attachment title='Response' source='8c2815b5-fef7-4817-bbec-1b994529bc78-attachment.json' type='application/json' size='93'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1667483768206' status='passed' stop='1667483768458'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='89d19ac3-a014-4f56-be40-a593df76cd24-attachment.json' type='application/json' size='71'/>
+                        <attachment title='Response' source='b8c87c57-8be0-4ad5-9db2-7f89b786a1be-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1667483768466' status='passed' stop='1667483768745'>
+                    <name>POST /session/:sessionId/element/83deeb88-288a-48b0-ab13-a229f1d9a6c0/click</name>
+                    <title>POST /session/:sessionId/element/83deeb88-288a-48b0-ab13-a229f1d9a6c0/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1667483768746' status='passed' stop='1667483769059'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='c74e926f-8a31-4953-8611-66896ea642aa-attachment.png' type='image/png' size='74167'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>this.linkAlerting.click is not a function</message>
+                <stack-trace>TypeError: this.linkAlerting.click is not a function
+                    at IOTSimCardPage.clickLinkAlerting (/home/cryzalis/study_portfolio/wdio-docker/test/pageobjects/iot-sim-card.page.js:49:33)
+                    at Context.&lt;anonymous> (/home/cryzalis/study_portfolio/wdio-docker/test/specs/products.e2e.js:108:30)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1667460432787' stop='1667460435178'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1667460432788' status='broken' stop='1667460435177'>
+            <name>check Voice API product</name>
+            <title>check Voice API product</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.87'/>
+            </parameters>
+            <steps>
+                <step start='1667460432790' status='broken' stop='1667460435177'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='1667b7c1-c245-4bb5-b19c-c78f07d96f67-attachment.json' type='application/json' size='34'/>
+                    </attachments>
+                    <steps>
+                        <step start='1667460435069' status='passed' stop='1667460435175'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='63c6864f-cc7c-4803-a9a0-257acb2f51d3-attachment.png' type='image/png' size='3249'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>unknown error: net::ERR_CONNECTION_RESET
+                  (Session info: headless chrome=107.0.5304.87)</message>
+                <stack-trace>unknown error: unknown error: net::ERR_CONNECTION_RESET
+                  (Session info: headless chrome=107.0.5304.87)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Context.&lt;anonymous> (/home/cryzalis/study_portfolio/wdio-docker/test/specs/products.e2e.js:6:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

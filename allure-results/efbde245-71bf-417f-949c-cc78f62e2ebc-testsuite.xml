@@ -1,0 +1,132 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1667482516795' stop='1667482521539'>
+    <name>Telnyx product journey</name>
+    <title>Telnyx product journey</title>
+    <test-cases>
+        <test-case start='1667482516796' status='broken' stop='1667482521537'>
+            <name>check Wireless product(explore Point)</name>
+            <title>check Wireless product(explore Point)</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.87'/>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.87'/>
+            </parameters>
+            <steps>
+                <step start='1667482516799' status='passed' stop='1667482520157'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='ebcc2347-3203-474f-b551-36762cf3958d-attachment.json' type='application/json' size='34'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1667482520162' status='passed' stop='1667482520388'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='db41eb77-2312-445a-8a59-8764f32946fb-attachment.json' type='application/json' size='79'/>
+                    </attachments>
+                    <steps>
+                        <step start='1667482520171' status='passed' stop='1667482520208'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='f0590d24-ef18-46d8-b3f8-9e8ad725d9ab-attachment.json' type='application/json' size='79'/>
+                                <attachment title='Response' source='e7c54840-8881-4c3b-afca-c0053c5ab5a3-attachment.json' type='application/json' size='83'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1667482520228' status='passed' stop='1667482520238'>
+                            <name>POST /session/:sessionId/elements</name>
+                            <title>POST /session/:sessionId/elements</title>
+                            <attachments>
+                                <attachment title='Request' source='7951f7e5-1f8b-4296-958e-a16772ad256e-attachment.json' type='application/json' size='79'/>
+                                <attachment title='Response' source='b7f72e9b-467f-49c6-a73e-6f9a5844312b-attachment.json' type='application/json' size='83'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1667482520262' status='passed' stop='1667482520283'>
+                            <name>POST /session/:sessionId/element/9b4cca8a-12ae-4661-83e3-7bd8bf4b7bc7/click</name>
+                            <title>POST /session/:sessionId/element/9b4cca8a-12ae-4661-83e3-7bd8bf4b7bc7/click</title>
+                            <attachments>
+                                <attachment title='Response' source='3bc4038f-1f4e-4195-8b82-185f030be0fb-attachment.json' type='application/json' size='93'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1667482520388' status='passed' stop='1667482520421'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='a1055d02-626c-4750-ad35-cfeca3c55744-attachment.json' type='application/json' size='71'/>
+                        <attachment title='Response' source='b8133850-447c-486d-b178-592d7f1bc044-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1667482520425' status='passed' stop='1667482520571'>
+                    <name>POST /session/:sessionId/element/4d0289ab-1be0-4315-a6fa-65a8a81a1455/click</name>
+                    <title>POST /session/:sessionId/element/4d0289ab-1be0-4315-a6fa-65a8a81a1455/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1667482520575' status='passed' stop='1667482520750'>
+                    <name>GET /session/:sessionId/url</name>
+                    <title>GET /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Response' source='dbabac22-3e52-49bb-a3a8-fd47f23997f9-attachment.json' type='application/json' size='21'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1667482521075' status='passed' stop='1667482521283'>
+                    <name>GET /session/:sessionId/url</name>
+                    <title>GET /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Response' source='ca1aa4be-7ac4-47e7-8327-fe9e3d8c64a9-attachment.json' type='application/json' size='42'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1667482521290' status='passed' stop='1667482521332'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='17710a28-2d45-451d-9504-50b46a8892fd-attachment.json' type='application/json' size='51'/>
+                        <attachment title='Response' source='b7b1e6b1-60ff-4864-ad37-718e417d4527-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1667482521337' status='passed' stop='1667482521368'>
+                    <name>GET /session/:sessionId/element/70c30b20-5691-4392-bcac-cff0581ba2e2/text</name>
+                    <title>GET /session/:sessionId/element/70c30b20-5691-4392-bcac-cff0581ba2e2/text</title>
+                    <attachments>
+                        <attachment title='Response' source='3b800225-e682-4685-a74b-e80c223ea336-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1667482521371' status='passed' stop='1667482521535'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='07f5a95b-9624-4998-8291-3bc91b91fa52-attachment.png' type='image/png' size='140958'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>this.linkSIMConnects.click is not a function</message>
+                <stack-trace>TypeError: this.linkSIMConnects.click is not a function
+                    at IOTSimCardPage.clicklinkSIMConnects (/home/cryzalis/study_portfolio/wdio-docker/test/pageobjects/iot-sim-card.page.js:30:36)
+                    at Context.&lt;anonymous> (/home/cryzalis/study_portfolio/wdio-docker/test/specs/products.e2e.js:96:30)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
