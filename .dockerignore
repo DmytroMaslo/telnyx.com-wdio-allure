@@ -1,0 +1,8 @@
+README.md
+LICENSE
+gpl-2.0.txt
+Dockerfile
+.git
+.dockerignore
+allure-report
+allure-result
