@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": ".//a[contains(., \"588 carriers and counting\")]"
+}

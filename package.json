@@ -17,6 +17,8 @@
   "scripts": {
     "test": "rm -r allure-results/history && cp -R allure-report/history/ allure-results/history && npx wdio run wdio.conf.js",
     "docker": "docker-compose up",
-    "report:generate":"allure generate"
+    "report:generate":"allure generate",
+    "allure:docs":"cp -R allure-report docs"
+
   }
 }

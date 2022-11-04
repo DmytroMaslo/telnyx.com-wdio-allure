@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": ".//a[contains(., \"Explore Point of Sale IoT Solutions\")]"
+}
