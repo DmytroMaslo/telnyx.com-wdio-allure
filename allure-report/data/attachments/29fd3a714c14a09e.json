@@ -1,5 +1,0 @@
-{
-  "error": "no such element",
-  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"main h1\"}\n  (Session info: chrome=107.0.5304.87)",
-  "stacktrace": "#0 0x55e7a28a2463 <unknown>\n#1 0x55e7a26668d8 <unknown>\n#2 0x55e7a26a443a <unknown>\n#3 0x55e7a26a4651 <unknown>\n#4 0x55e7a26e07a4 <unknown>\n#5 0x55e7a26c564d <unknown>\n#6 0x55e7a26de30f <unknown>\n#7 0x55e7a26c5443 <unknown>\n#8 0x55e7a26963c5 <unknown>\n#9 0x55e7a2697531 <unknown>\n#10 0x55e7a28f4dce <unknown>\n#11 0x55e7a28f8192 <unknown>\n#12 0x55e7a28d993e <unknown>\n#13 0x55e7a28f9103 <unknown>\n#14 0x55e7a28ccd85 <unknown>\n#15 0x55e7a291a0a8 <unknown>\n#16 0x55e7a291a239 <unknown>\n#17 0x55e7a2935492 <unknown>\n#18 0x7fcdec262609 start_thread\n"
-}

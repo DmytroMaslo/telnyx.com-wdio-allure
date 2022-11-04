@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": "ul li:first-child a div p + p"
-}

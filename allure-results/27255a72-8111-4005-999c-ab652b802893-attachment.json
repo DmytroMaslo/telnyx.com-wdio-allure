@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": "main div li:nth-child(2) a p + p"
-}

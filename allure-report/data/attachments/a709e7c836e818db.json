@@ -1,5 +1,0 @@
-{
-  "error": "no such element",
-  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\".//a[contains(., \"live reports\")]\"}\n  (Session info: chrome=107.0.5304.87)",
-  "stacktrace": "#0 0x55bcebd6a463 <unknown>\n#1 0x55bcebb2e8d8 <unknown>\n#2 0x55bcebb6c43a <unknown>\n#3 0x55bcebb6c651 <unknown>\n#4 0x55bcebba87a4 <unknown>\n#5 0x55bcebb8d64d <unknown>\n#6 0x55bcebba630f <unknown>\n#7 0x55bcebb8d443 <unknown>\n#8 0x55bcebb5e3c5 <unknown>\n#9 0x55bcebb5f531 <unknown>\n#10 0x55bcebdbcdce <unknown>\n#11 0x55bcebdc0192 <unknown>\n#12 0x55bcebda193e <unknown>\n#13 0x55bcebdc1103 <unknown>\n#14 0x55bcebd94d85 <unknown>\n#15 0x55bcebde20a8 <unknown>\n#16 0x55bcebde2239 <unknown>\n#17 0x55bcebdfd492 <unknown>\n#18 0x7f4ff1777609 start_thread\n"
-}
