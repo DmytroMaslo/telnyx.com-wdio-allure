@@ -1,64 +1,44 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
-
-# Controls when the action will run.
+name: Main Github Actions
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
+  workflow_dispatch:
   push:
     branches:
-      - main
-
-  pull_request:
-    branches:
-      - main
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+      - 'main' # (main branch) Set branch of the GH repo to push      
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      - name: Checkout the code
-        uses: actions/checkout@v2
-
-      - name: Build docker and run tests
-        run: "make ci-up"
-
-      - name: Get allure history
-        uses: actions/checkout@v2
-        if: always()
-        continue-on-error: true
+  test_suite: # Name of the job
+      runs-on: ubuntu-20.04 # Choosing OS
+      steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
-          ref: gh-pages
-          path: gh-pages
-
-      - name: Setup allure report
-        uses: simple-elf/allure-report-action@master
+          node-version: '16' # In command line run “node -v” and choose your version
+      - run: node -v
+      - run: npm ci
+      - run: npm i -g allure-commandline
+     #  - run: npm config set script-shell "G:\Git\bin\bash.exe"
+      - name: run test
+        run: npm run test # Our name of the headless script
+      - name: copy history
+        run: npm run report:copyhistory
+ 
+      - name: Generate Report
         if: always()
-        id: allure-report
+        run: npm run allure:report # Name of the allure generate script
+      - name: Upload Results
+        uses: actions/upload-artifact@v1
+        if: always()
         with:
-          allure_results: allure-results
-          allure_history: allure-history
-          keep_reports: 20
-
-      - name: Deploy report to Github Pages
+          name: allure-results
+          path: ./allure-results # Name of the folder with allure results                    
+      - name: Publishing Allure artifact to Github Actions
+        uses: actions/upload-artifact@v2
         if: always()
-        uses: peaceiris/actions-gh-pages@v2
-        env:
-          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-history
-
-        # Need to enable IMAP for this step to success
-        # https://support.google.com/mail/answer/7126229?hl=en
-        # And allow less secure apps
-        # https://myaccount.google.com/lesssecureapps
-        # Display unlock captcha
-        # https://accounts.google.com/b/0/DisplayUnlockCaptcha
+        with:
+          name: allure-report
+          path: allure-report       
+      - name: Deploy report
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        if: always()
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: allure-report # The folder the action should deploy.
