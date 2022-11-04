@@ -18,12 +18,14 @@ jobs:
      #  - run: npm config set script-shell "G:\Git\bin\bash.exe"
       - name: run test
         run: npm run test # Our name of the headless script
-      - name: copy history
-        run: npm run report:copyhistory
  
       - name: Generate Report
         if: always()
         run: npm run allure:report # Name of the allure generate script
+
+      - name: copy history
+        run: npm run report:copyhistory
+        
       - name: Upload Results
         uses: actions/upload-artifact@v1
         if: always()

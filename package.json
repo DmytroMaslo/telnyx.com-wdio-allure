@@ -21,8 +21,6 @@
     "docker": "docker-compose up",
     "report:generate":"allure generate",
     "report:copyhistory":"allure generate && npm run report:history",
-    "allure:docs":"cp -R allure-report docs",
-    "allure:report": "allure generate allure-results --clean -o allure-report"
-
+    "allure:docs":"cp -R allure-report docs"
   }
 }
