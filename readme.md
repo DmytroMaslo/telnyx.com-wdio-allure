@@ -1,6 +1,6 @@
 
-# cypress-cucumber
-Cypress 10+ with Cucumber boilerplate tests for [telynx.com](https://telnyx.com/).
+# wdio-allure
+Some jouerny WebdriverIO tests for [telynx.com](https://telnyx.com/).
 
 ### Contents
 - [Pre-requisite](#Pre-requisite)
@@ -8,9 +8,6 @@ Cypress 10+ with Cucumber boilerplate tests for [telynx.com](https://telnyx.com/
 - [Allure report](#allure-report)
 - [Usage](#Usage)
 - [Requirements](#Requirements)
-- [File structure](#file-structure)
-- [Test structure](#test-structure)
-- [POM file structure](#pom-file-structure)
 - [Testing](#Testing)
 - [Result](#Result)
 - [To do](#to-do)
@@ -52,19 +49,6 @@ $ npm run docker
  :exclamation: To install and run the project, you need [NodeJS](https://nodejs.org/) v16+.
 
 
-### POM file structure
-Page Object Model (POM) is a design pattern, popularly used in test automation that creates Object Repository for web UI elements. The advantage of the model is that it reduces code duplication and improves test maintenance. Example below, for details use the [official documentation](https://docs.cypress.io/guides/end-to-end-testing/protractor-to-cypress#Cypress-with-Page-Objects)
-```js
-import Pages from './Pages'
-const buttonAddNewProfile = 'Add New Profile'//CSS locators
-const inputOutboundVoiceProfileName = 'input[name="name"]'
-const buttonCreate = 'button[type="submit"]'
-
-class ProgrammableVoicePage extends Pages{//Сlass title is the same as the page 
-    clickButtonAddNewProfile(){//Method Title, some parameters 
-        cy.get('button').contains(buttonAddNewProfile).click()
-    }
-```
 ### Testing
 To run tests in the headless mod in the root directory, execute
 first use:
